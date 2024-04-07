@@ -6,7 +6,7 @@
 /*   By: msmajdor <msmajdor@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/07 11:10:06 by msmajdor          #+#    #+#             */
-/*   Updated: 2024/04/07 11:11:03 by msmajdor         ###   ########.fr       */
+/*   Updated: 2024/04/07 11:12:23 by msmajdor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,6 @@ void	ft_putendl_fd(char *str, int fd)
 
 	i = 0;
 	while (str[i])
-	{
-		write(fd, &str[i], 1);
-		i++;
-	}
+		write(fd, &str[i++], 1);
 	write(fd, "\n", 1);
 }

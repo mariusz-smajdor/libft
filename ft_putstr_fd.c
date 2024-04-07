@@ -6,7 +6,7 @@
 /*   By: msmajdor <msmajdor@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/07 11:03:24 by msmajdor          #+#    #+#             */
-/*   Updated: 2024/04/07 11:06:54 by msmajdor         ###   ########.fr       */
+/*   Updated: 2024/04/07 11:12:56 by msmajdor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,5 @@ void	ft_putstr_fd(char *str, int fd)
 
 	i = 0;
 	while (str[i])
-	{
-		write(fd, &str[i], 1);
-		i++;
-	}
+		write(fd, &str[i++], 1);
 }
