@@ -1,8 +1,5 @@
 NAME	= libft.a
-CC		= cc
-FLAGS	= -Wall -Wextra -Werror
-rm		= rm -f
-
+RM		= rm -f
 SRCS	= ${wildcard *.c}
 OBJS	= ${SRCS:.c=.o}
 
@@ -12,7 +9,7 @@ ${NAME}: ${OBJS}
 	ar rcs -o ${NAME} ${OBJS}
 
 clean:
-	${RM} *.o */*.o */*/*.o
+	${RM} *.o
 
 fclean: clean
 	${RM} ${NAME}
