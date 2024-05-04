@@ -6,11 +6,11 @@
 /*   By: msmajdor <msmajdor@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/23 13:41:46 by msmajdor          #+#    #+#             */
-/*   Updated: 2024/04/10 18:11:39 by msmajdor         ###   ########.fr       */
+/*   Updated: 2024/05/04 14:14:21 by msmajdor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "libft.h"
 
 static char	*read_file(int fd, char *store, char *buffer)
 {
