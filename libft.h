@@ -6,7 +6,7 @@
 /*   By: msmajdor <msmajdor@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/07 11:21:09 by msmajdor          #+#    #+#             */
-/*   Updated: 2024/04/10 14:05:09 by msmajdor         ###   ########.fr       */
+/*   Updated: 2024/05/04 14:13:33 by msmajdor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 #  define BUFFER_SIZE 42
 # endif
 
+# include <fcntl.h>
 # include <stddef.h>
 # include <stdlib.h>
 # include <unistd.h>
