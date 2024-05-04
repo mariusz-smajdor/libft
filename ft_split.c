@@ -6,7 +6,7 @@
 /*   By: msmajdor <msmajdor@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/07 11:35:24 by msmajdor          #+#    #+#             */
-/*   Updated: 2024/04/07 11:58:34 by msmajdor         ###   ########.fr       */
+/*   Updated: 2024/05/04 09:29:57 by msmajdor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ static char	**fill_list(char **list, const char *s, char c)
 	size_t	i;
 
 	i = 0;
-	while (ft_strchr(s, c))
+	while (ft_strchr(s, c) && s)
 	{
 		list[i++] = ft_substr(s, 0, ft_strchr(s, c) - s);
 		if (!list[i - 1])
@@ -51,7 +51,7 @@ static char	**fill_list(char **list, const char *s, char c)
 		while (*s == c)
 			s++;
 	}
-	if (*s != '\0')
+	if (*s != '\0' && s)
 	{
 		list[i++] = ft_substr(s, 0, ft_strchr(s, '\0') - s);
 		if (!list[i - 1])
