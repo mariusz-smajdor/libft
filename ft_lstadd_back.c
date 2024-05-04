@@ -6,11 +6,11 @@
 /*   By: msmajdor <msmajdor@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/16 14:32:58 by msmajdor          #+#    #+#             */
-/*   Updated: 2024/03/29 11:16:47 by msmajdor         ###   ########.fr       */
+/*   Updated: 2024/05/04 09:19:15 by msmajdor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft.h"
+#include "libft.h"
 
 void	ft_lstadd_back(t_list **lst, t_list *new)
 {
