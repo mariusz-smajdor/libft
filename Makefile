@@ -20,9 +20,11 @@ all: ${NAME}
 
 ${NAME}: ${OBJS}
 	ar rcs -o ${NAME} ${OBJS}
+	${MAKE} clean
 
 bonus: ${OBJS} ${BONUS_OBJS}
 	ar rcs -o ${NAME} ${OBJS} ${BONUS_OBJS}
+	${MAKE} clean
 
 clean:
 	${RM} *.o
