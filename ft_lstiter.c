@@ -19,7 +19,7 @@ void	ft_lstiter(t_list *lst, void (*f)(void *))
 	tmp = lst;
 	while (tmp)
 	{
-		f(tmp->content); 
+		f(tmp->content);
 		tmp = tmp->next;
 	}
 }
